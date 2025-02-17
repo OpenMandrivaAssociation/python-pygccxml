@@ -19,3 +19,6 @@ Python package for easy C++ declarations navigation.
 %files
 %{py_sitedir}/pygccxml
 %{py_sitedir}/pygccxml-*.*-info
+%doc README.rst
+%doc CHANGELOG.md
+%doc LICENSE.rst

@@ -1,6 +1,6 @@
 Name:		python-pygccxml
 Version:	2.6.1
-Release:	2
+Release:	3
 Source0:	https://github.com/CastXML/pygccxml/archive/refs/tags/v%{version}/pygccxml-%{version}.tar.gz
 Summary:	Python package for easy C++ declarations navigation
 URL:		https://github.com/CastXML/pygccxml

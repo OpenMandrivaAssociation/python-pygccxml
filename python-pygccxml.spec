@@ -1,24 +1,24 @@
+%define module pygccxml
+
 Name:		python-pygccxml
-Version:	2.6.1
-Release:	3
-Source0:	https://github.com/CastXML/pygccxml/archive/refs/tags/v%{version}/pygccxml-%{version}.tar.gz
+Version:	3.0.2
+Release:	1
 Summary:	Python package for easy C++ declarations navigation
-URL:		https://github.com/CastXML/pygccxml
-License:	Boost
+License:	BSL-1.0
 Group:		Development/Python
-BuildRequires:	python
+URL:		https://github.com/CastXML/pygccxml
+Source0:	https://github.com/CastXML/pygccxml/archive/v%{version}/%{name}-%{version}.tar.gz
+
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 Python package for easy C++ declarations navigation.
 
-%prep
-%autosetup -p1 -n pygccxml-%{version}
-
 %files
-%{py_sitedir}/pygccxml
-%{py_sitedir}/pygccxml-*.*-info
-%doc README.rst
-%doc CHANGELOG.md
-%doc LICENSE.rst
+%doc README.rst CHANGELOG.md
+%{py_sitedir}/%{module}
+%{py_sitedir}/%{module}-%{version}.dist-info

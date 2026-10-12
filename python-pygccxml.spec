@@ -2,7 +2,7 @@
 
 Name:		python-pygccxml
 Version:	3.0.2
-Release:	1
+Release:	2
 Summary:	Python package for easy C++ declarations navigation
 License:	BSL-1.0
 Group:		Development/Python
